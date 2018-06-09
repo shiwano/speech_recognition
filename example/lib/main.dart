@@ -95,7 +95,7 @@ class _MyAppState extends State<MyApp> {
 
   void start() => _speech
       .listen(locale: _currentLocale)
-      .then((result) => print('_MyAppState.start => result ${result}'));
+      .then((result) => print('_MyAppState.start => result $result'));
 
   void cancel() =>
       _speech.cancel().then((result) => setState(() => _isListening = result));
